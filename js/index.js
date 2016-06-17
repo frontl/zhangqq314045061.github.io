@@ -7,9 +7,6 @@
   scrollOverflow:true,
   navigationTooltips:['首页','作品','关于我','联系我'],
   scrollBa:true,
-
-
-
 }
 
 
