@@ -60,7 +60,13 @@ a{
 			margin:auto;
 			line-height: 80px;
 			text-align: center;
+			transition: all .8s ease-in-out;
+			&:hover{
+				border:3px solid #2F70B0;
+				box-sizing: border-box;
+			}
 		}
+
 
 		.xio1{
 			left:0;
@@ -261,8 +267,8 @@ a{
 			.op{}
 
 			.a{
-				height:350px;
-				width:600px;
+				height:438px;
+				width:650px;
 				font-size: 40px;
 				position: absolute;
 				top:0;
@@ -271,8 +277,19 @@ a{
 				right:0;
 				margin:auto;
 				overflow: hidden;
-				.c{
-					height:350px;
+				background: url(../img/diannao.png) no-repeat;
+				background-position: 100%;
+				.tx{
+					height:281px;
+					width:494px;
+					padding:21px 0 0 64px;
+					position: relative;
+					overflow: hidden;
+				}
+	/*			.c{
+					position: absolute;
+					height:281px;
+					background: blue;
 					width:auto;
 					position: absolute;
 					left:0;
@@ -280,11 +297,14 @@ a{
 					top:0;
 					bottom:0;
 					margin:auto;
-				}
+				}*/
+
 
 				.b{
-					height:350px;
-					width:600px;
+					height:281px;
+					width:494px;
+					/*padding:21px 0 0 64px;*/
+					/*padding:20px 204px 116px 97px;*/
 					img{
 						height:100%;
 						width: 100%
@@ -365,12 +385,14 @@ a{
 					display:none;
 				}
 			}
+
 		}
 
 #section3{
 
 	        overflow: hidden;
 			color:#888B90;
+		
 			.head{
 				color:#2B2B2B;
 				position: absolute;
@@ -423,6 +445,7 @@ a{
 				left:0;
 				right:0;
 				margin:auto;
+				 text-indent:28px;
 				line-height: 1.5rem;
 
 			}
@@ -497,13 +520,17 @@ a{
 			}
 		}
 
-		@media screen and(max-width:500px){
+@media screen and(max-width:500px){
 			#section3{
 				min-width:500px;
            p.duan{
+          text-indent:28px;
            	max-width:400px;
            top:200px;
            }
+           	.jineng h1{
+            font-size: 30px;
+			}
 			
 			.person{
 				max-width:500px;
@@ -559,167 +586,152 @@ a{
 		}
 	}
 
-	#section4{
-		min-width:500px;
-		.lianxi{
-			height:100%;
-			width:100%;
-			background:#99DCEE;
-			font-size: 14px;
-			.qq{position: absolute;
-				top:-130px;
-				left:0;
-				right:0;
-				margin:auto;
-				font-size: 16px;
-				height:30px;
-				width:60px;
-					color:#241500;
-				font-weight: bold;
-
-			}
-
-			.me{position: absolute;
-				top:-160px;
-				left:0;
-				right:0;
-				margin:auto;
-				font-size: 16px;
-				height:30px;
-				width:60px;
-				font-weight: bold;
-				color:#241500;
-
-			}
-			.message{
-				height:auto;
-				width:100%;
-				text-align: center;
-				font-size: 30px;
-				position: absolute;
-				top:160px;
-				left:0;
-				right:0;
-				margin:auto;
-				a{	height:60px;
-				 line-height: 60px;
-				}
-				.pa{
-					padding:10px 20px;
-					box-sizing:border-box;
-					width:100%;
-					height:300px;
-					background:#fff;
-
-				}
-			}
-			h1{
-				height:100px;
-				width:400px;
-				line-height: 100px;
-				text-align: center;
-				font-size: 40px;
-			 	position: absolute;
-			 	top:100px;
-			 	left:0;
-			 	right:0;
-			 	margin:auto;	
-			}
-			.box{
-				height:430px;
-				width:600px;
-				background:#2CCDC5;
-				border-radius: 10%;
-				position: absolute;
-			 	top:200px;
-			 	left:0;
-			 	right:0;
-			 	margin:auto;
-			 	span{
-			 		height:30px;
-			 		width:60px;
-			 		display:inline-block;
-			 	}
-			 	input{
-			 		border:0;
-			 		outline: none;
-			 		height:30px;
-			 		text-align: center;
-
-			 	}
-			 	.name{
-			 		position: absolute;
-			 		top:30px;
-			 		left:10px;
-
-			 	}
-			 	.email{
-			 		position: absolute;
-			 		top:30px;
-			 		left:310px;
-
-			 	}		 	.age{
-			 		position: absolute;
-			 		top:100px;
-			 		left:10px;
 
 
-			 	}
-
-			 	.phone{
-			 		position: absolute;
-			 		top:100px;
-			 		left:310px;
-
-
-			 	}
-	
-			}
+#section4{
+	background:#33C1C9;
+	height:100%;
+	width:100%;
+	.lianxi{
+		height:600px;
+		width:450px;
+		position: absolute;
+		left:0;
+		top:0;
+		right:0;
+		margin:auto;
+		bottom:0;
+		border:2px solid #FFFFFF;
+		.hl{text-align: center;
+			width:150px;
+			position: absolute;
+			left:0;
+			right:0;
+			margin:auto;
+			background:#fff;
+			top:-15px;
 		}
-    
+		.wo{
+			height:30px;
+			line-height: 30px;
+			width:100%;
+			text-align: center;
+			font-weight: bold;
+
+
+
+		}
+		.wo:nth-child(2){
+			margin-top:140px;
+		}
+		.me{
+			color:#F27C2B;
+			font-size: 14px;
+			width:300px;
+			height:40px;
+			font-size: 30px;
+			line-height: 40px;
+			position: absolute;
+			top:350px;
+			text-align: center;
+			left:0;
+			right:0;
+			margin:auto;
+			background:#434852;
+			border-bottom-right-radius: 30%;
+			border-bottom-left-radius: 30%;
+		}
+		.me:hover .ta{
+			width:300px;
+				
+
+		}
+		.me:hover{color:#fff;}
+		.ta{width:0;
+			height:40px;
+			font-size: 30px;
+			line-height: 40px;
+			position: absolute;
+			top:0;
+			text-align: center;
+			left:0;
+		 color:#434852;
+			background:#000;
+			opacity: 0.5;
+			color:#fff;
+			border-bottom-right-radius: 30%;
+			border-bottom-left-radius: 30%;
+			transition: all .8s ease;
+
+
+		}
+		
+	}
+}
+@media screen and(max-width:1200px){
+#section4{
+	max-width:1200px;
+	.lianxi{
+		height:540px;
+		width:460px;
+		position: absolute;
+		left:0;
+		top:0;
+		right:0;
+		margin:auto;
+		bottom:0;
+		border:1px solid #FFFFFF;
+		.hl{
+			text-align: center;
+			width:100px;
+			font-size: 24px;
+			position: absolute;
+			left:0;
+			right:0;
+			margin:auto;
+			background:#fff;
+			top:5px;
+			
+
+		}
+
 
 	}
+
+}
+
+		}
+
 @media screen and(max-width:500px){
-			#section4{
-			.lianxi{
-				max-width:500px;
+#section4{
+	max-width:500px;
+	.lianxi{
+		height:400px;
+		width:300px;
+		position: absolute;
+		left:0;
+		top:0;
+		right:0;
+		margin:auto;
+		bottom:0;
+		border:1px solid #FFFFFF;
+		.hl{
+			text-align: center;
+			width:100px;
+			font-size: 18px;
+			position: absolute;
+			left:0;
+			right:0;
+			margin:auto;
+			background:#fff;
+			top:5px;
 			
-			h1{
-				height:60px;
-				line-height: 60px;
-				font-size: 24px;
-			}	
-			.box{
-				width:400px;
-				height:440px;
-							 	.name{
-			 		position: absolute;
-			 		top:30px;
-			 		left:80px;
-			 	}
-			 	.email{
-			 		position: absolute;
-			 		top:70px;
-			 		left:80px;
 
-			 	}		 	.age{
-			 		position: absolute;
-			 		top:110px;
-			 		left:80px;
+		}
 
 
-			 	}
+	}
 
-			 	.phone{
-			 		position: absolute;
-			 		top:150px;
-			 		left:80px;
-
-
-			 	}
-
-			}
-			}
 }
 
 		}

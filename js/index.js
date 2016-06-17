@@ -1,12 +1,11 @@
   $('#main').fullpage(
   {
   scrollingSpeed:300,
-  anchors:['首页','作品','自我介绍','联系方式'],
+  anchors:['首页','作品','关于我','联系我'],
   lockAnchors:['首页'],
   navigation:true,
   scrollOverflow:true,
-   continuousVertical:true,
-  navigationTooltips:['首页','作品','自我介绍','联系方式'],
+  navigationTooltips:['首页','作品','关于我','联系我'],
   scrollBa:true,
 
 
@@ -17,6 +16,7 @@
   	);
 var mySwiper = new Swiper('.swiper-container',{
 	autoplay: 5000,
+  effect:'fade',
 slidesOffsetAfter : 100,
 })
 var mySwiper1 = new Swiper('.swiper-container1',{

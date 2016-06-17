@@ -66,6 +66,12 @@ a {
   margin: auto;
   line-height: 80px;
   text-align: center;
+  transition: all .8s ease-in-out;
+}
+
+#section1 .page1 .circle:hover {
+  border: 3px solid #2F70B0;
+  box-sizing: border-box;
 }
 
 #section1 .page1 .xio1 {
@@ -237,8 +243,8 @@ a {
 }
 
 #section2 .a {
-  height: 350px;
-  width: 600px;
+  height: 438px;
+  width: 650px;
   font-size: 40px;
   position: absolute;
   top: 0;
@@ -247,22 +253,35 @@ a {
   right: 0;
   margin: auto;
   overflow: hidden;
+  background: url(../img/diannao.png) no-repeat;
+  background-position: 100%;
+  /*			.c{
+					position: absolute;
+					height:281px;
+					background: blue;
+					width:auto;
+					position: absolute;
+					left:0;
+					right: 0;
+					top:0;
+					bottom:0;
+					margin:auto;
+				}*/
 }
 
-#section2 .a .c {
-  height: 350px;
-  width: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+#section2 .a .tx {
+  height: 281px;
+  width: 494px;
+  padding: 21px 0 0 64px;
+  position: relative;
+  overflow: hidden;
 }
 
 #section2 .a .b {
-  height: 350px;
-  width: 600px;
+  height: 281px;
+  width: 494px;
+  /*padding:21px 0 0 64px;*/
+  /*padding:20px 204px 116px 97px;*/
 }
 
 #section2 .a .b img {
@@ -401,6 +420,7 @@ a {
   left: 0;
   right: 0;
   margin: auto;
+  text-indent: 28px;
   line-height: 1.5rem;
 }
 
@@ -480,8 +500,12 @@ a {
     min-width: 500px;
   }
   #section3 p.duan {
+    text-indent: 28px;
     max-width: 400px;
     top: 200px;
+  }
+  #section3 .jineng h1 {
+    font-size: 30px;
   }
   #section3 .person {
     max-width: 500px;
@@ -528,160 +552,142 @@ a {
 }
 
 #section4 {
-  min-width: 500px;
+  background: #33C1C9;
+  height: 100%;
+  width: 100%;
 }
 
 #section4 .lianxi {
-  height: 100%;
-  width: 100%;
-  background: #99DCEE;
-  font-size: 14px;
+  height: 600px;
+  width: 450px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  border: 2px solid #FFFFFF;
 }
 
-#section4 .lianxi .qq {
+#section4 .lianxi .hl {
+  text-align: center;
+  width: 150px;
   position: absolute;
-  top: -130px;
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 16px;
+  background: #fff;
+  top: -15px;
+}
+
+#section4 .lianxi .wo {
   height: 30px;
-  width: 60px;
-  color: #241500;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
   font-weight: bold;
+}
+
+#section4 .lianxi .wo:nth-child(2) {
+  margin-top: 140px;
 }
 
 #section4 .lianxi .me {
-  position: absolute;
-  top: -160px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  font-size: 16px;
-  height: 30px;
-  width: 60px;
-  font-weight: bold;
-  color: #241500;
-}
-
-#section4 .lianxi .message {
-  height: auto;
-  width: 100%;
-  text-align: center;
+  color: #F27C2B;
+  font-size: 14px;
+  width: 300px;
+  height: 40px;
   font-size: 30px;
+  line-height: 40px;
   position: absolute;
-  top: 160px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#section4 .lianxi .message a {
-  height: 60px;
-  line-height: 60px;
-}
-
-#section4 .lianxi .message .pa {
-  padding: 10px 20px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 300px;
-  background: #fff;
-}
-
-#section4 .lianxi h1 {
-  height: 100px;
-  width: 400px;
-  line-height: 100px;
+  top: 350px;
   text-align: center;
-  font-size: 40px;
-  position: absolute;
-  top: 100px;
   left: 0;
   right: 0;
   margin: auto;
+  background: #434852;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
 }
 
-#section4 .lianxi .box {
-  height: 430px;
-  width: 600px;
-  background: #2CCDC5;
-  border-radius: 10%;
+#section4 .lianxi .me:hover .ta {
+  width: 300px;
+}
+
+#section4 .lianxi .me:hover {
+  color: #fff;
+}
+
+#section4 .lianxi .ta {
+  width: 0;
+  height: 40px;
+  font-size: 30px;
+  line-height: 40px;
   position: absolute;
-  top: 200px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#section4 .lianxi .box span {
-  height: 30px;
-  width: 60px;
-  display: inline-block;
-}
-
-#section4 .lianxi .box input {
-  border: 0;
-  outline: none;
-  height: 30px;
+  top: 0;
   text-align: center;
+  left: 0;
+  color: #434852;
+  background: #000;
+  opacity: 0.5;
+  color: #fff;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  transition: all .8s ease;
 }
 
-#section4 .lianxi .box .name {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-
-#section4 .lianxi .box .email {
-  position: absolute;
-  top: 30px;
-  left: 310px;
-}
-
-#section4 .lianxi .box .age {
-  position: absolute;
-  top: 100px;
-  left: 10px;
-}
-
-#section4 .lianxi .box .phone {
-  position: absolute;
-  top: 100px;
-  left: 310px;
+@media screen and (max-width: 1200px) {
+  #section4 {
+    max-width: 1200px;
+  }
+  #section4 .lianxi {
+    height: 540px;
+    width: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    border: 1px solid #FFFFFF;
+  }
+  #section4 .lianxi .hl {
+    text-align: center;
+    width: 100px;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    top: 5px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  #section4 .lianxi {
+  #section4 {
     max-width: 500px;
   }
-  #section4 .lianxi h1 {
-    height: 60px;
-    line-height: 60px;
-    font-size: 24px;
-  }
-  #section4 .lianxi .box {
-    width: 400px;
-    height: 440px;
-  }
-  #section4 .lianxi .box .name {
+  #section4 .lianxi {
+    height: 400px;
+    width: 300px;
     position: absolute;
-    top: 30px;
-    left: 80px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    border: 1px solid #FFFFFF;
   }
-  #section4 .lianxi .box .email {
+  #section4 .lianxi .hl {
+    text-align: center;
+    width: 100px;
+    font-size: 18px;
     position: absolute;
-    top: 70px;
-    left: 80px;
-  }
-  #section4 .lianxi .box .age {
-    position: absolute;
-    top: 110px;
-    left: 80px;
-  }
-  #section4 .lianxi .box .phone {
-    position: absolute;
-    top: 150px;
-    left: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    top: 5px;
   }
 }
