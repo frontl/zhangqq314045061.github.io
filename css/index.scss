@@ -8,6 +8,7 @@
 
 }
 .anc{
+	display:block;
 	height:40px;
 	width:40px;
 	position: absolute;
@@ -31,7 +32,12 @@ a{
 	text-decoration: none;
 	color:#000;
 }
+@media screen and(max-width:500px){
+	.anc{
+		display:none;
+	}
 
+}
 #section1{
 			background: url(../img/cheng.jpg) no-repeat;
 		background-size: 100%;
@@ -479,8 +485,8 @@ a{
 					margin:auto;
 				}
 				.box{
-					height:100px;
-					width:100px;
+					height:90px;
+					width:90px;
 					img{
 						height:100%;
 						width:100%;
@@ -593,7 +599,7 @@ a{
 	height:100%;
 	width:100%;
 	.lianxi{
-		height:600px;
+		height:540px;
 		width:450px;
 		position: absolute;
 		left:0;
@@ -609,16 +615,16 @@ a{
 			right:0;
 			margin:auto;
 			background:#fff;
-			top:-15px;
+			top:-19px;
+			padding:5px 8px;
+			border-radius: 12%;
 		}
 		.wo{
 			height:30px;
 			line-height: 30px;
 			width:100%;
 			text-align: center;
-			font-weight: bold;
-
-
+            font-size: 18px;
 
 		}
 		.wo:nth-child(2){
@@ -640,6 +646,7 @@ a{
 			background:#434852;
 			border-bottom-right-radius: 30%;
 			border-bottom-left-radius: 30%;
+			cursor:pointer;
 		}
 		.me:hover .ta{
 			width:300px;
